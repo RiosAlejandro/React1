@@ -1,0 +1,48 @@
+
+form{
+    width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.tituloFormulario{
+    margin: 1rem 0 2rem 0;
+}
+.camposNombre{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.subCamposNombre{
+    box-shadow:3px 3px 4px 1px #0f0f0f;
+    -moz-box-shadow:3px 3px 4px 1px #0f0f0f;
+    -webkit-box-shadow:3px 3px 4px 1px #0f0f0f;
+    /*width: 100%;*/
+}
+/*.camposNombre input{
+    width: 45%;
+}*/
+.camposFormulario{
+    width: 100%;
+    margin-bottom: 2rem;
+    box-shadow:3px 3px 4px 1px #0f0f0f;
+    -moz-box-shadow:3px 3px 4px 1px #0f0f0f;
+    -webkit-box-shadow:3px 3px 4px 1px #0f0f0f;
+}
+.camposFormulario input{
+    width: 100%;
+}
+input{
+    border-radius: 6px;
+    padding: 0.6rem;
+    color: black;
+    border: 1px solid white;
+    box-shadow:inset 0px 0px 0px 3px #293066;
+    -moz-box-shadow:inset 0px 0px 0px 3px #293066;
+    -webkit-box-shadow:inset 0px 0px 0px 3px #293066;
+}
