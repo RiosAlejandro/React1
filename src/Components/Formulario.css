@@ -8,8 +8,15 @@ form{
     flex-flow: column;
     align-items: center;
 }
-.tituloFormulario{
+.fotoFormulario{
     margin: 1rem 0 2rem 0;
+    /* width: 2rem; */
+    height: 12rem;
+    background: #fff;
+}
+.fotoFormulario input{
+    width: 22rem;
+    height: 12rem;
 }
 .camposNombre{
     width: 100%;
@@ -45,4 +52,31 @@ input{
     box-shadow:inset 0px 0px 0px 3px #293066;
     -moz-box-shadow:inset 0px 0px 0px 3px #293066;
     -webkit-box-shadow:inset 0px 0px 0px 3px #293066;
+}
+.botonFormulario{
+    border-radius: 6px;
+    padding: 0.6rem;
+    color: black;
+    border: 1px solid white;
+    box-shadow:inset 0px 0px 0px 3px #293066;
+    -moz-box-shadow:inset 0px 0px 0px 3px #293066;
+    -webkit-box-shadow:inset 0px 0px 0px 3px #293066;
+}
+.botonFormulario button{
+    font-size: 2rem;
+    padding: 0.3rem 1.4rem;
+}
+.botonFormulario:hover{
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow:inset 0px 0px 0px 3px #fff;
+    -moz-box-shadow:inset 0px 0px 0px 3px #fff;
+    -webkit-box-shadow:inset 0px 0px 0px 3px #fff;
+    transition: .4s linear;
+}
+button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #293066;
+    transition: .4s linear;
 }

@@ -5,8 +5,8 @@ const Formulario = () => {
     return ( 
         <Fragment>
             <form>
-                <div className="tituloFormulario">
-                    <span>Foto centrada y en redondo</span>
+                <div className="fotoFormulario">
+                    <input type="file" name="imagen" />
                 </div>
                 <div className="camposNombre">
                     <div className="subCamposNombre">
@@ -50,7 +50,7 @@ const Formulario = () => {
                         placeholder= "Confirm Password"
                     />
                 </div>
-                <div>
+                <div className="botonFormulario">
                     <button>Ok</button>
                 </div>
             </form>
