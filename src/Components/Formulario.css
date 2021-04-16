@@ -53,6 +53,11 @@ input{
     -moz-box-shadow:inset 0px 0px 0px 3px #293066;
     -webkit-box-shadow:inset 0px 0px 0px 3px #293066;
 }
+input:hover{
+    background-color: #293066;
+    cursor: pointer;
+    transition: all .2s linear;
+}
 .botonFormulario{
     border-radius: 6px;
     padding: 0.6rem;
