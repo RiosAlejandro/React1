@@ -1,6 +1,9 @@
 import React, { Fragment } from 'react';
 import { useForm } from 'react-hook-form';
 import './Formulario.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser, faEnvelope, faPhone, faUnlock, faLock} from '@fortawesome/free-solid-svg-icons'
+import {} from '@fortawesome/free-brands-svg-icons'
 
 const Formulario = () => {
 
@@ -33,7 +36,7 @@ const Formulario = () => {
                     </div>
                 </div>
                 <div className="camposFormulario">
-                    <span><i class="fas fa-hand-paper"></i></span>
+                    <FontAwesomeIcon icon={faUser} />
                     <input 
                         placeholder= "Username"
                         name="username"
@@ -42,7 +45,7 @@ const Formulario = () => {
                     {errors.username && "Username is required"}
                 </div>
                 <div className="camposFormulario">
-                    <span></span>
+                    <FontAwesomeIcon icon={faEnvelope} />
                     <input 
                         placeholder= "Email"
                         name="email"
@@ -51,7 +54,7 @@ const Formulario = () => {
                     {errors.email && "Email is required"}
                 </div>
                 <div className="camposFormulario">
-                    <span></span>
+                    <FontAwesomeIcon icon={faPhone} />
                     <input 
                         placeholder= "Tel. Number"
                         name="telNumber"
@@ -59,7 +62,7 @@ const Formulario = () => {
                     />
                 </div>
                 <div className="camposFormulario">
-                    <span></span>
+                    <FontAwesomeIcon icon={faUnlock} />
                     <input 
                         placeholder= "Password"
                         name="password"
@@ -68,7 +71,7 @@ const Formulario = () => {
                     {errors.password && "password is required"}
                 </div>
                 <div className="camposFormulario">
-                    <span></span>
+                    <FontAwesomeIcon icon={faLock} />
                     <input 
                         placeholder= "Confirm Password"
                         name="confirmPassword"

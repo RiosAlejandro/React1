@@ -40,9 +40,16 @@ form{
     box-shadow:3px 3px 4px 1px #0f0f0f;
     -moz-box-shadow:3px 3px 4px 1px #0f0f0f;
     -webkit-box-shadow:3px 3px 4px 1px #0f0f0f;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .camposFormulario input{
-    width: 100%;
+    width: 90%;
+}
+.camposFormulario span{
+    font-size: 2.5rem;
+    margin-left: 8px;
 }
 input{
     border-radius: 6px;
