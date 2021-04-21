@@ -36,48 +36,57 @@ const Formulario = () => {
                     </div>
                 </div>
                 <div className="camposFormulario">
-                    <FontAwesomeIcon icon={faUser} />
-                    <input 
-                        placeholder= "Username"
-                        name="username"
-                        {...register("username", {required: true, minLength: 4, maxLength: 12})}
-                    />
-                    {errors.username && "Username is required"}
+                    <span><FontAwesomeIcon icon={faUser} /></span>
+                    <div className="campoInput">
+                        <input 
+                            placeholder= "Username"
+                            name="username"
+                            {...register("username", {required: true, minLength: 4, maxLength: 12})}
+                        />
+                        {errors.username && "Username is required"}
+                    </div>
                 </div>
                 <div className="camposFormulario">
-                    <FontAwesomeIcon icon={faEnvelope} />
-                    <input 
-                        placeholder= "Email"
-                        name="email"
-                        {...register("email", {required: true})}/*poner patron*/ 
-                    />
-                    {errors.email && "Email is required"}
+                    <span><FontAwesomeIcon icon={faEnvelope} /></span>
+                    <div className="campoInput">
+                        <input 
+                            placeholder= "Email"
+                            name="email"
+                            {...register("email", {required: true})}/*poner patron*/ 
+                        />
+                        {errors.email && "Email is required"}
+                    </div>
                 </div>
                 <div className="camposFormulario">
-                    <FontAwesomeIcon icon={faPhone} />
-                    <input 
-                        placeholder= "Tel. Number"
-                        name="telNumber"
-                        {...register("telNumber", {required: false})}
-                    />
+                    <span><FontAwesomeIcon icon={faPhone} /></span>
+                    <div className="campoInput">
+                        <input 
+                            placeholder= "Tel. Number"
+                            name="telNumber"
+                            {...register("telNumber", {required: false})}
+                        />
+                    </div>
                 </div>
                 <div className="camposFormulario">
-                    <FontAwesomeIcon icon={faUnlock} />
-                    <input 
-                        placeholder= "Password"
-                        name="password"
-                        {...register("password", {required: true, minLength: 6, maxLength: 30})}
-                    />
-                    {errors.password && "password is required"}
+                    <span><FontAwesomeIcon icon={faUnlock} /></span>
+                    <div className="campoInput">
+                        <input 
+                            placeholder= "Password"
+                            name="password"
+                            {...register("password", {required: true, minLength: 6, maxLength: 30})}
+                        />
+                        {errors.password && "password is required"}
+                    </div>
                 </div>
                 <div className="camposFormulario">
-                    <FontAwesomeIcon icon={faLock} />
-                    <input 
-                        placeholder= "Confirm Password"
-                        name="confirmPassword"
-                        
-                    />
-                    {errors.confirmPassword && "passwords do not match"}
+                    <span><FontAwesomeIcon icon={faLock} /></span>
+                    <div className="campoInput">
+                        <input 
+                            placeholder= "Confirm Password"
+                            name="confirmPassword"
+                        />
+                        {errors.confirmPassword && "passwords do not match"}
+                    </div>
                 </div>
                 <div className="botonFormulario">
                     <button>Ok</button>

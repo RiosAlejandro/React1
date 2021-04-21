@@ -1,4 +1,6 @@
-
+::placeholder{
+    color: black;
+}
 form{
     width: 500px;
     height: auto;
@@ -12,7 +14,7 @@ form{
     margin: 1rem 0 2rem 0;
     /* width: 2rem; */
     height: 12rem;
-    background: #fff;
+    background: gray;
 }
 .fotoFormulario input{
     width: 22rem;
@@ -29,36 +31,37 @@ form{
     box-shadow:3px 3px 4px 1px #0f0f0f;
     -moz-box-shadow:3px 3px 4px 1px #0f0f0f;
     -webkit-box-shadow:3px 3px 4px 1px #0f0f0f;
-    /*width: 100%;*/
+    border-radius: 6px;
 }
-/*.camposNombre input{
-    width: 45%;
-}*/
 .camposFormulario{
     width: 100%;
     margin-bottom: 2rem;
-    box-shadow:3px 3px 4px 1px #0f0f0f;
-    -moz-box-shadow:3px 3px 4px 1px #0f0f0f;
-    -webkit-box-shadow:3px 3px 4px 1px #0f0f0f;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-}
-.camposFormulario input{
-    width: 90%;
 }
 .camposFormulario span{
     font-size: 2.5rem;
     margin-left: 8px;
 }
+.campoInput{
+    box-shadow:3px 3px 4px 1px #0f0f0f;
+    -moz-box-shadow:3px 3px 4px 1px #0f0f0f;
+    -webkit-box-shadow:3px 3px 4px 1px #0f0f0f;
+    width: 90%;
+    border-radius: 6px;
+}
 input{
     border-radius: 6px;
     padding: 0.6rem;
     color: black;
-    border: 1px solid white;
+    border: 1px solid gray;
     box-shadow:inset 0px 0px 0px 3px #293066;
     -moz-box-shadow:inset 0px 0px 0px 3px #293066;
     -webkit-box-shadow:inset 0px 0px 0px 3px #293066;
+    width: 100%;
+    background-color: gray;
+    outline: none;
 }
 input:hover{
     background-color: #293066;
@@ -69,7 +72,7 @@ input:hover{
     border-radius: 6px;
     padding: 0.6rem;
     color: black;
-    border: 1px solid white;
+    border: 1px solid gray;
     box-shadow:inset 0px 0px 0px 3px #293066;
     -moz-box-shadow:inset 0px 0px 0px 3px #293066;
     -webkit-box-shadow:inset 0px 0px 0px 3px #293066;
@@ -81,10 +84,14 @@ input:hover{
 .botonFormulario:hover{
     cursor: pointer;
     border: 1px solid black;
-    box-shadow:inset 0px 0px 0px 3px #fff;
-    -moz-box-shadow:inset 0px 0px 0px 3px #fff;
-    -webkit-box-shadow:inset 0px 0px 0px 3px #fff;
+    box-shadow:inset 0px 0px 0px 3px grey;
+    -moz-box-shadow:inset 0px 0px 0px 3px grey;
+    -webkit-box-shadow:inset 0px 0px 0px 3px grey;
     transition: .4s linear;
+}
+button{
+    background-color: grey;
+    font-weight: 600;
 }
 button:hover{
     cursor: pointer;

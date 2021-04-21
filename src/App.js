@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <Fragment>
-      <h1>Registration Form</h1>
+      <div className="text"><h1>Registration Form</h1></div>
 
       <Formulario />
     </Fragment>
