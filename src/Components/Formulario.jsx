@@ -73,6 +73,7 @@ const Formulario = () => {
                         <input 
                             placeholder= "Password"
                             name="password"
+                            type="password"
                             {...register("password", {required: true, minLength: 6, maxLength: 30})}
                         />
                         {errors.password && "password is required"}
@@ -84,6 +85,7 @@ const Formulario = () => {
                         <input 
                             placeholder= "Confirm Password"
                             name="confirmPassword"
+                            type="password"
                         />
                         {errors.confirmPassword && "passwords do not match"}
                     </div>

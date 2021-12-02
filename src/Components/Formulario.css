@@ -15,6 +15,10 @@ form{
     /* width: 2rem; */
     height: 12rem;
     background: gray;
+    box-shadow: 3px 3px 4px 1px #0f0f0f;
+    -moz-box-shadow: 3px 3px 4px 1px #0f0f0f;
+    -webkit-box-shadow: 3px 3px 4px 1px #0f0f0f;
+    border-radius: 2px;
 }
 .fotoFormulario input{
     width: 22rem;
@@ -54,17 +58,20 @@ form{
 input{
     border-radius: 6px;
     padding: 0.6rem;
-    color: black;
+    color: rgb(12, 41, 21);
     border: 1px solid gray;
-    box-shadow:inset 0px 0px 0px 3px #293066;
+    /* box-shadow:inset 0px 0px 0px 3px #293066;
     -moz-box-shadow:inset 0px 0px 0px 3px #293066;
-    -webkit-box-shadow:inset 0px 0px 0px 3px #293066;
+    -webkit-box-shadow:inset 0px 0px 0px 3px #293066; */
     width: 100%;
-    background-color: gray;
+    background-color: #bdbdc0; /*cbcbce*/
     outline: none;
+    margin-bottom: 0.3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 input:hover{
-    background-color: #293066;
+    background-color: #2b3683;
     cursor: pointer;
     transition: all .2s linear;
 }
@@ -84,13 +91,13 @@ input:hover{
 .botonFormulario:hover{
     cursor: pointer;
     border: 1px solid black;
-    box-shadow:inset 0px 0px 0px 3px grey;
-    -moz-box-shadow:inset 0px 0px 0px 3px grey;
-    -webkit-box-shadow:inset 0px 0px 0px 3px grey;
+    box-shadow:inset 0px 0px 0px 3px #bdbdc0;
+    -moz-box-shadow:inset 0px 0px 0px 3px #bdbdc0;
+    -webkit-box-shadow:inset 0px 0px 0px 3px #bdbdc0;
     transition: .4s linear;
 }
 button{
-    background-color: grey;
+    background-color: #bdbdc0;
     font-weight: 600;
 }
 button:hover{
@@ -98,4 +105,13 @@ button:hover{
     color: white;
     background-color: #293066;
     transition: .4s linear;
+}
+
+
+/* */
+
+@media only screen and (max-width: 520px){
+    form{
+        width: 96%;
+    }
 }

@@ -11,7 +11,21 @@ html{
 body{
   font-family: 'Lora', serif;
   background-color: #37365c;
-}
+  background: rgb(218,218,222);
+  background: linear-gradient(90deg, rgba(218,218,222,1) 10%, rgba(55,54,92,1) 50%, rgba(218,218,222,1) 100%);
+
+  /* background: rgb(55,54,92);
+  background: radial-gradient(circle, rgba(55,54,92,1) 67%, rgba(218,218,222,1) 100%); */
+
+  /* background: rgb(218,218,222);
+  background: linear-gradient(90deg, rgba(218,218,222,1) 0%, rgba(55,54,92,1) 50%, rgba(218,218,222,1) 100%); */
+
+  /* background: rgb(55,54,92);
+  background: radial-gradient(circle, rgba(55,54,92,1) 0%, rgba(148,187,233,1) 100%); */
+
+  /* background: rgb(55,54,92);
+  background: radial-gradient(circle, rgba(55,54,92,1) 20%, rgba(218,218,222,1) 100%); */
+} 
 
 .text{
 	width: 100%;
@@ -19,7 +33,7 @@ body{
     margin-right: auto;
 	display: inline-block;
 	color: transparent;
-	background-image: linear-gradient(43deg, #090812 15%, #4f4f54 66%, #292930 100%);
+	background-image: linear-gradient(43deg, #010005 15%, #3b3b42 66%, #010005 100%);/*4a4a4b*/
 
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -28,5 +42,5 @@ body{
 .text h1{
 	text-align: center;
 	margin: 2rem 0 ;
-	font-size: 4rem;
+	font-size: 4.3rem;
 }
